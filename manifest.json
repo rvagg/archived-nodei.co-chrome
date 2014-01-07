@@ -6,7 +6,6 @@
   , "permissions"      : [
         "https://registry.npmjs.org/"
       , "https://raw.github.com/"
-      , "tabs"
     ]
   , "content_scripts": [
         {
