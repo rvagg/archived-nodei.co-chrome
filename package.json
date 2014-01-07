@@ -1,0 +1,15 @@
+{
+  "name": "nodei.co-chrome",
+  "dependencies": {
+    "bonzo": "~1.3.7",
+    "reqwest": "~0.9.7",
+    "browserify": "~3.19.0",
+    "ender-js": "~0.5.0",
+    "qwery-mobile": "~1.0.14",
+    "domready": "~0.2.13"
+  },
+  "scripts": {
+    "install": "browserify lib/index.js -o inject.js -r qwery-mobile:qwery",
+    "bundle": "zip /tmp/nodei.co-chrome.zip ./ -r -x node_modules/\\* -x package.json -x npm-debug.log -x .git/\\* -x .gitignore"
+  }
+}

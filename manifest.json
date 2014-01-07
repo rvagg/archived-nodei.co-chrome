@@ -1,0 +1,24 @@
+{
+    "manifest_version" : 2
+  , "name"             : "Nodei.co: npm badges for GitHub"
+  , "description"      : "Display nodei.co npm badges on GitHub README files for Node.js packages"
+  , "version"          : "0.0"
+  , "permissions"      : [
+        "https://registry.npmjs.org/"
+      , "https://raw.github.com/"
+      , "tabs"
+    ]
+  , "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/*"
+            ]
+          , "js": [
+                "inject.js"
+            ]
+        }
+    ]
+  , "web_accessible_resources": [
+        "lib/embed_injected.js"
+    ]
+}
