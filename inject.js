@@ -72,19 +72,19 @@ module.exports = inject
 const $         = require('./ender')
     , badgeHtml =
           '<div class="nodeico-badges">'
-        + '<a href="https://nodei.co/npm/{name}/?chrome">'
-        + '<img src="https://nodei.co/npm/{name}.png?downloads=true&stars=true&chrome" style="margin-right: 4px;">'
-        + '</a>'
-        + '<a href="https://nodei.co/npm/{name}/?chrome">'
-        + '<img src="https://nodei.co/npm-dl/{name}.png?months=6&chrome" style="margin-bottom: 6px;">'
-        + '</a>'
+        +   '<a href="https://nodei.co/npm/{name}/?chrome">'
+        +     '<img src="https://nodei.co/npm/{name}.png?chrome" style="margin-right: 4px;">'
+        +   '</a>'
         + '</div>'
 
 function insert (name) {
   var existing = false
   
   $('img').map(function(img) {
-    if ($(img).attr('src').indexOf('nodei.co') > -1) existing = true
+    var src = $(img).attr('src') || ''
+    var src2 = $(img).attr('data-canonical-src') || ''
+    if (src.indexOf('nodei.co') > -1) existing = true
+    if (src2.indexOf('nodei.co') > -1) existing = true
   })
   
   if (existing) return
