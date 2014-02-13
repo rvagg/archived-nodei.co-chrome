@@ -71,13 +71,10 @@ module.exports = inject
 },{"./ender":2,"./insert_badge":5}],5:[function(require,module,exports){
 const $         = require('./ender')
     , badgeHtml =
-          '<div class="nodeico-badges" style="text-align: center;">'
-        + '<a href="https://nodei.co/npm/{name}/?chrome">'
-        + '<img src="https://nodei.co/npm/{name}.png?downloads=true&stars=true&chrome" style="margin-right: 4px;">'
-        + '</a>'
-        + '<a href="https://nodei.co/npm/{name}/?chrome">'
-        + '<img src="https://nodei.co/npm-dl/{name}.png?months=6&chrome" style="margin-bottom: 6px;">'
-        + '</a>'
+          '<div class="nodeico-badges">'
+        +   '<a href="https://nodei.co/npm/{name}/?chrome">'
+        +     '<img src="https://nodei.co/npm/{name}.png?chrome" style="margin-right: 4px;">'
+        +   '</a>'
         + '</div>'
 
 function insert (name) {
@@ -1703,9 +1700,9 @@ module.exports = insert
   }, true)
 }(ender));
 
-},{"bonzo":6,"qwery":"5S6tXD","qwery-mobile":"5S6tXD"}],"qwery":[function(require,module,exports){
-module.exports=require('5S6tXD');
-},{}],"5S6tXD":[function(require,module,exports){
+},{"bonzo":6,"qwery":"Av6yiO","qwery-mobile":"Av6yiO"}],"qwery":[function(require,module,exports){
+module.exports=require('Av6yiO');
+},{}],"Av6yiO":[function(require,module,exports){
 /*!
   * @preserve Qwery - A Blazing Fast query selector engine
   * https://github.com/ded/qwery
