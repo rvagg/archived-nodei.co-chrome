@@ -73,7 +73,10 @@ const $         = require('./ender')
     , badgeHtml =
           '<div class="nodeico-badges">'
         +   '<a href="https://nodei.co/npm/{name}/?chrome">'
-        +     '<img src="https://nodei.co/npm/{name}.png?chrome" style="margin-right: 4px;">'
+        +     '<img src="https://nodei.co/npm/{name}.png?downloads=true&stars=true&chrome" style="margin-right: 4px;">'
+        +   '</a>'
+        +   '<a href="https://nodei.co/npm/{name}/?chrome">'
+        +     '<img src="https://nodei.co/npm-dl/{name}.png?months=6&chrome" style="margin-bottom: 6px;">'
         +   '</a>'
         + '</div>'
 
@@ -104,6 +107,7 @@ function insert (name) {
 }
 
 module.exports = insert
+
 },{"./ender":2}],6:[function(require,module,exports){
 /*!
   * Bonzo: DOM Utility (c) Dustin Diaz 2012
