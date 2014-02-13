@@ -71,10 +71,13 @@ module.exports = inject
 },{"./ender":2,"./insert_badge":5}],5:[function(require,module,exports){
 const $         = require('./ender')
     , badgeHtml =
-          '<div class="nodeico-badges">'
-        +   '<a href="https://nodei.co/npm/{name}/?chrome">'
-        +     '<img src="https://nodei.co/npm/{name}.png?chrome" style="margin-right: 4px;">'
-        +   '</a>'
+          '<div class="nodeico-badges" style="text-align: center;">'
+        + '<a href="https://nodei.co/npm/{name}/?chrome">'
+        + '<img src="https://nodei.co/npm/{name}.png?downloads=true&stars=true&chrome" style="margin-right: 4px;">'
+        + '</a>'
+        + '<a href="https://nodei.co/npm/{name}/?chrome">'
+        + '<img src="https://nodei.co/npm-dl/{name}.png?months=6&chrome" style="margin-bottom: 6px;">'
+        + '</a>'
         + '</div>'
 
 function insert (name) {
