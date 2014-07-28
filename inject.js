@@ -69,7 +69,6 @@ function inject (username, repo) {
 }
 
 module.exports = inject
-
 },{"./ender":2,"./insert_badge":5}],5:[function(require,module,exports){
 const $         = require('./ender')
     , badgeHtml =
@@ -1706,7 +1705,7 @@ module.exports = insert
   }, true)
 }(ender));
 
-},{"bonzo":6,"qwery":"ZLvLf8","qwery-mobile":"ZLvLf8"}],"ZLvLf8":[function(require,module,exports){
+},{"bonzo":6,"qwery":"Av6yiO","qwery-mobile":"Av6yiO"}],"Av6yiO":[function(require,module,exports){
 /*!
   * @preserve Qwery - A Blazing Fast query selector engine
   * https://github.com/ded/qwery
@@ -1787,7 +1786,7 @@ module.exports = insert
   return qwery
 }, this);
 },{}],"qwery":[function(require,module,exports){
-module.exports=require('ZLvLf8');
+module.exports=require('Av6yiO');
 },{}],14:[function(require,module,exports){
 /*! version: 0.9.7
   * Reqwest! A general purpose XHR connection manager
