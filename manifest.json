@@ -7,7 +7,7 @@
   , "version"          : "0.2"
   , "permissions"      : [
         "https://registry.npmjs.org/"
-      , "https://raw.github.com/"
+      , "https://rawgit.com/"
     ]
   , "content_scripts": [
         {
